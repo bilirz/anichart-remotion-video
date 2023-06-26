@@ -1,0 +1,32 @@
+{
+  "name": "anichart-remotion-template",
+  "version": "1.0.0",
+  "description": "Render the Anichart animation into a video.",
+  "scripts": {
+    "start": "remotion preview src/index.tsx",
+    "build": "remotion render src/index.tsx Chart out/video",
+    "sequence": "remotion render src/index.tsx Chart out/video --sequence",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx && tsc"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@anichart/remotion": "0.0.2",
+    "@remotion/bundler": "^3.0.0",
+    "@remotion/cli": "^3.0.0",
+    "@remotion/eslint-config": "^3.0.0",
+    "@remotion/renderer": "^3.0.0",
+    "anichart": "3.0.0-alpha.4",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^3.0.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.6",
+    "@types/web": "^0.0.61",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2"
+  }
+}
